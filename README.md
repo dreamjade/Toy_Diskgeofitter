@@ -3,6 +3,8 @@
 **ToyDiskGeoFitter** is a Python package that fits the geometric parameters (center, inclination, position angle) of astronomical disks in FITS images using MCMC. It also helps generate radial profiles from the fitted geometry.
 
 [![License: GPL](https://img.shields.io/badge/License-GPL-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![DOI](https://zenodo.org/badge/988424759.svg)](https://doi.org/10.5281/zenodo.15490404)
+
 <!-- Add PyPI badge if/when released -->
 
 ## Core Features
