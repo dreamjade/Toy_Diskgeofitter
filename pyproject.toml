@@ -1,0 +1,43 @@
+# toydiskgeofitter_project/pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toydiskgeofitter"
+version = "0.1.0"
+authors = [
+  { name="dreamjade" },
+]
+description = "A Python module for MCMC fitting of astronomical disk geometric parameters."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+    "matplotlib>=3.5",
+    "astropy>=5.0",
+    "emcee>=3.1",
+    "corner>=2.2",
+    "toml>=0.10",
+    "tqdm>=4.60",
+    "scikit-image>=0.19"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/dreamjade/toydiskgeofitter"
+"Bug Tracker" = "https://github.com/dreamjade/toydiskgeofitter/issues"
+
+[tool.setuptools.packages.find]
+where = ["."] # looks for packages in the current directory
+include = ["toydiskgeofitter*"]  # Include the main package
+exclude = ["tests*", "examples*"] # Exclude tests and examples from the wheel
